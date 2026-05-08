@@ -1,0 +1,43 @@
+appId: com.pozitron.hepsiburada
+---
+
+- launchApp:
+    clearState: true
+
+- waitForAnimationToEnd
+
+- runFlow: ./helpers/handle-initial-popups.yaml
+
+- waitForAnimationToEnd
+
+- tapOn:
+    index: 0
+    text: ".*"
+
+- waitForAnimationToEnd
+
+- tapOn:
+    text: "Sepete Ekle"
+
+- waitForAnimationToEnd
+
+- runFlow: ./helpers/handle-login-prompt.yaml
+
+- runFlow:
+    when:
+      visible:
+        text: "Sepete git"
+    commands:
+      - tapOn:
+          text: "Sepete git"
+      - waitForAnimationToEnd
+
+- waitForAnimationToEnd
+
+- assertVisible:
+    text: "Sepetim"
+
+- assertVisible:
+    text: "TL"
+
+- takeScreenshot: output/cart-verified.png

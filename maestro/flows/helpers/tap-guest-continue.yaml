@@ -1,0 +1,5 @@
+appId: com.pozitron.hepsiburada
+---
+- tapOn:
+    text: "Misafir olarak devam et"
+- waitForAnimationToEnd

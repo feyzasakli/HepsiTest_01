@@ -1,0 +1,14 @@
+{
+  "name": "teedo-hepsiburada-automation",
+  "version": "1.0.0",
+  "description": "TEEDO - Hepsiburada Web Otomasyon Projesi (Playwright + POM)",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0"
+  }
+}

@@ -1,0 +1,30 @@
+appId: com.pozitron.hepsiburada
+---
+- runFlow:
+    when:
+      visible:
+        text: "Üye olmadan devam et"
+    commands:
+      - tapOn:
+          text: "Üye olmadan devam et"
+      - waitForAnimationToEnd
+
+- runFlow:
+    when:
+      visible:
+        text: "Misafir olarak devam et"
+    commands:
+      - tapOn:
+          text: "Misafir olarak devam et"
+      - waitForAnimationToEnd
+
+- runFlow:
+    when:
+      visible:
+        text: "Giriş yapmadan devam et"
+    commands:
+      - tapOn:
+          text: "Giriş yapmadan devam et"
+      - waitForAnimationToEnd
+
+- waitForAnimationToEnd

@@ -1,0 +1,30 @@
+appId: com.pozitron.hepsiburada
+---
+- runFlow:
+    when:
+      visible:
+        text: "İzin Ver"
+    commands:
+      - tapOn:
+          text: "Reddet"
+      - waitForAnimationToEnd
+
+- runFlow:
+    when:
+      visible:
+        text: "Kabul Et"
+    commands:
+      - tapOn:
+          text: "Kabul Et"
+      - waitForAnimationToEnd
+
+- runFlow:
+    when:
+      visible:
+        text: "Kapat"
+    commands:
+      - tapOn:
+          text: "Kapat"
+      - waitForAnimationToEnd
+
+- waitForAnimationToEnd

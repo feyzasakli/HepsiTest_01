@@ -1,0 +1,5 @@
+appId: com.pozitron.hepsiburada
+---
+- tapOn:
+    text: "Üye olmadan devam et"
+- waitForAnimationToEnd
